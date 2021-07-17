@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Rest;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate/Support/Str;
+use Illuminate\Support\Str;
 
 class RestFactory extends Factory
 {
@@ -14,7 +14,6 @@ class RestFactory extends Factory
      * @var string
      */
     protected $model = Rest::class;
-
     /**
      * Define the model's default state.
      *
@@ -23,10 +22,8 @@ class RestFactory extends Factory
     public function definition()
     {
         return [
-            'message'=>Str::random(10),
-            'url'=>$this->faker->url,
-            //
+            'message' => Str::random(10),
+            'url' => $this->faker->url,
         ];
     }
-}
 }
